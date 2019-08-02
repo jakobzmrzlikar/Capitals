@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{% if correct %}
+<p>Vaš odgovor je pravilen!</p>
+{% else %}
+<p>Vaš odgovor je napačen!</p>
+{% endif %}
+<a href="{% url 'question' %}">IGRAJ NAPREJ</a>
+
+{% endblock %}

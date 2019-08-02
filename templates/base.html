@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,10 +12,13 @@
         crossorigin="anonymous"></script>
     {% load static %}
     <link rel="stylesheet" href="{% static 'core/styles.css' %}">
+
     <title>Capitals</title>
 </head>
+
 <body>
-    Welcome to Capitals quiz!
-    <a href="{% url 'question' %}">START</a>
+{% block content %}{%endblock%}
+
 </body>
+
 </html>
