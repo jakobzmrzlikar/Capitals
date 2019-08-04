@@ -28,6 +28,7 @@
         <a class="navbar-brand" href="{% url 'logout'%}?next={{request.path}}">Odjava</a>
         {% else %}
         <a class="navbar-brand" href="{% url 'login'%}?next={{request.path}}">Prijava</a>
+        <a class="navbar-brand" href="{% url 'signup'%}">Ustvari račun</a>
         {% endif %}
     </nav>
     

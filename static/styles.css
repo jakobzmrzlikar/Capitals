@@ -1,6 +1,6 @@
 #content {
     margin-left: 50px;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .navbar-custom {
@@ -10,6 +10,14 @@
 .navbar-custom .navbar-brand,
 .navbar-custom .navbar-text {
     color: rgba(255,255,255,.8);
+}
+
+h2 {
+    margin-top: 100px;
+}
+
+#leaderboard {
+    width: 30%;
 }
 
 #question {
