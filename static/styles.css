@@ -1,0 +1,19 @@
+#content {
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+.navbar-custom {
+    background-color: #16a085;
+}
+/* change the brand and text color */
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+    color: rgba(255,255,255,.8);
+}
+
+#question {
+    font-size: 150%;
+    font-weight: 500;
+}
+

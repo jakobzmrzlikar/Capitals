@@ -3,15 +3,14 @@
 {% block content %}
 
 {% if form.errors %}
-<p>Your username and password didn't match. Please try again.</p>
+<p>Vaše uporabniško ime in geslo se ne ujemata. Prosimo, poskusite ponovno!</p>
 {% endif %}
 
 {% if next %}
 {% if user.is_authenticated %}
-<p>Your account doesn't have access to this page. To proceed,
-    please login with an account that has access.</p>
+<p>Vaš račun nima dostopa do te strani!</p>
 {% else %}
-<p>Please login to see this page.</p>
+<p>Prosimo, prijavite se!</p>
 {% endif %}
 {% endif %}
 
@@ -30,11 +29,11 @@
         </tr>
     </table>
 
-    <button type="submit" value="login" class="btn btn-primary">Submit</button>
+    <button type="submit" value="login" class="btn btn-primary">Pošlji</button>
     <input type="hidden" name="next" value="{{ next }}" />  
 </form>
 
-{# Assumes you setup the password_reset view in your URLconf #}
-<p><a href="{% url 'password_reset' %}">Lost password?</a></p>
+<!-- {# Assumes you setup the password_reset view in your URLconf #}
+<p><a href="{% url 'password_reset' %}">Iygubljneo ?</a></p> -->
 
 {% endblock %}
